@@ -8,7 +8,7 @@ interface Props {
 const Counter = (props: Props) => {
     return (
         <View>
-            <Text>jjxjjx</Text>
+            <Text>jjx</Text>
         </View>
     )
 }
