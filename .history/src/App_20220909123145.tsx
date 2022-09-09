@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import {AiFillBook} from 'react-icons/ai'
 import Counter from './components/Counter';
 function App() {
@@ -16,6 +17,8 @@ function App() {
              < AiFillBook className='' />Read More</button>
             </div>
           </div>
+
+
           <div className="row">
             <div className="col">
              <Counter/>
