@@ -26,7 +26,7 @@ function App() {
 
        <div className="row">
         <div className="col">
-          <Greeting/>
+          <Greeting
         </div>
        </div>
 

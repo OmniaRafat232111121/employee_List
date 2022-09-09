@@ -11,12 +11,12 @@ const Counter: React.FC<IProps> = (props) => {
  let [state,setState]=useState<IState>({
     count:0
  });
- let increment=():void=>{
+ let increment=():=>{
     setState({
         count:state.count+1
     });
  }
- let decrement=():void=>{
+ let decrement=()=>{
     setState({
         count:state.count-1
     });

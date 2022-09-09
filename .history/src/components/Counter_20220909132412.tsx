@@ -16,7 +16,7 @@ const Counter: React.FC<IProps> = (props) => {
         count:state.count+1
     });
  }
- let decrement=():void=>{
+ let decrement=():=>{
     setState({
         count:state.count-1
     });
