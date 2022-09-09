@@ -22,7 +22,7 @@ const LoginForm: React.FC<IProps> = (props) => {
         }
     })
   };
-  let login=(e:React.ChangeEvent<HTMLInputElement>)=>{
+  l login=(e:React.ChangeEvent<HTMLInputElement>):void=>{
       e.preventDefault();
       console.log(state.user)
   };

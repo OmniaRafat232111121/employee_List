@@ -22,7 +22,7 @@ const LoginForm: React.FC<IProps> = (props) => {
         }
     })
   };
-  let login=(e:React.ChangeEvent<HTMLInputElement>)=>{
+  let login=(e:React.FormEventHandler<HTMLFormElement> | undefined):void=>{
       e.preventDefault();
       console.log(state.user)
   };
@@ -37,7 +37,7 @@ const LoginForm: React.FC<IProps> = (props) => {
                       <p className="h3">Login Form</p>
                     </div>
                     <div className="card-body">
-                        <form onSubmit={login}>
+                        <form onSubmit={login}={>
                             <div className="mb-2">
                                 <input type="text"
                                 required={true}

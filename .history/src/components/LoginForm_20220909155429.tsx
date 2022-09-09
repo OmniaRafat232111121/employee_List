@@ -22,9 +22,8 @@ const LoginForm: React.FC<IProps> = (props) => {
         }
     })
   };
-  let login=(e:React.ChangeEvent<HTMLInputElement>)=>{
-      e.preventDefault();
-      console.log(state.user)
+  let login=(e:React.DOMAttributes<HTMLFormElement>):void=>{
+      e.pre
   };
     return (
    <React.Fragment>
