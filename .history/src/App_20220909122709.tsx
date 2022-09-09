@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 import {AiFillBook} from 'react-icons/ai'
+//import Customer from './components/Customer';
+import CustomerClass from './components/CustomerClass';
+import Employee from "./components/Employee"
+import EmployeeClass from './components/EmployeeClass';
 import Counter from './components/Counter';
 function App() {
   
@@ -18,7 +22,17 @@ function App() {
             </div>
           </div>
 
-         
+          {/* <div className="row">
+            <div className="col">
+              <Customer name={'omnia'} age={33} title={"The Good Doctor"}/>
+      
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <CustomerClass name={'omnia'} age={33} title={"The Good Doctor"}/>
+            </div>
+          </div> */}
           <div className="row">
             <div className="col">
              <Counter/>

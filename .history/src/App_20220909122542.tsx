@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import {AiFillBook} from 'react-icons/ai'
-import Counter from './components/Counter';
+
 function App() {
-  
   return (
     <div className="App">
+      <div className="App">
      <React.Fragment>
       <div className="container mt-3">
         <div className="grid">
@@ -18,20 +17,6 @@ function App() {
             </div>
           </div>
 
-         
-          <div className="row">
-            <div className="col">
-             <Counter/>
-              
-            </div>
-          </div>
-
-
-
-        </div>
-      </div>
-
-     </React.Fragment>
     </div>
   );
 }
