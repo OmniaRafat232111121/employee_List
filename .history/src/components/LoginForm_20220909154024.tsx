@@ -21,9 +21,9 @@ const LoginForm: React.FC<IProps> = (props) => {
             [event.target.name]:event.target.value
         }
     })
-  };
-  const login=(e:React.ChangeEvent<HTMLInputElement>):void=>{
-      e.preventDefault();
+  }
+  const login=(event:React.ChangeEvent<HTMLInputElement>):void=>{
+      event.preventDefault();
       console.log(state.user)
   };
     return (

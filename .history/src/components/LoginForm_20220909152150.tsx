@@ -1,13 +1,14 @@
 import React,{useState} from 'react';
 import { IUser } from '../modals/IUser';
+import  React,{useState} from 'react';
 
-interface IProps {
+interface ILoginFormProps {
 
 }
-interface IState {
+interface ILoginFormState {
 user:IUser
 }
-const LoginForm: React.FC<IProps> = (props) => {
+const LoginForm: React.FC<ILoginFormProps> = (props) => {
     let [state,setState]=useState<IState>({
       user:{
         username:'',
@@ -21,14 +22,9 @@ const LoginForm: React.FC<IProps> = (props) => {
             [event.target.name]:event.target.value
         }
     })
-  };
-  const login=(e:React.ChangeEvent<HTMLInputElement>):void=>{
-      e.preventDefault();
-      console.log(state.user)
-  };
+  }
     return (
    <React.Fragment>
-    {/* <pre>{JSON.stringify(state.user)}</pre> */}
     <div className="container mt-3">
         <div className="row">
             <div className="col-md-4">
@@ -37,7 +33,7 @@ const LoginForm: React.FC<IProps> = (props) => {
                       <p className="h3">Login Form</p>
                     </div>
                     <div className="card-body">
-                        <form onSubmit={login}>
+                        <form>
                             <div className="mb-2">
                                 <input type="text"
                                 required={true}

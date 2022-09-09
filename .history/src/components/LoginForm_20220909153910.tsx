@@ -21,9 +21,9 @@ const LoginForm: React.FC<IProps> = (props) => {
             [event.target.name]:event.target.value
         }
     })
-  };
-  const login=(e:React.ChangeEvent<HTMLInputElement>):void=>{
-      e.preventDefault();
+  }
+  const handleChange=(event:React.ChangeEvent<HTMLInputElement>):void=>{
+      event.preventDefault();
       console.log(state.user)
   };
     return (
@@ -37,7 +37,7 @@ const LoginForm: React.FC<IProps> = (props) => {
                       <p className="h3">Login Form</p>
                     </div>
                     <div className="card-body">
-                        <form onSubmit={login}>
+                        <form on={handleChange}>
                             <div className="mb-2">
                                 <input type="text"
                                 required={true}

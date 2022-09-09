@@ -21,11 +21,8 @@ const LoginForm: React.FC<IProps> = (props) => {
             [event.target.name]:event.target.value
         }
     })
-  };
-  const login=(e:React.ChangeEvent<HTMLInputElement>):void=>{
-      e.preventDefault();
-      console.log(state.user)
-  };
+  }
+  const handleChange=
     return (
    <React.Fragment>
     {/* <pre>{JSON.stringify(state.user)}</pre> */}
@@ -37,7 +34,7 @@ const LoginForm: React.FC<IProps> = (props) => {
                       <p className="h3">Login Form</p>
                     </div>
                     <div className="card-body">
-                        <form onSubmit={login}>
+                        <form onSubmit={handleChnge}>
                             <div className="mb-2">
                                 <input type="text"
                                 required={true}
