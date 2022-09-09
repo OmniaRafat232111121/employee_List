@@ -32,7 +32,7 @@ function App() {
        </div> */}
        <div className="row">
         <div className="col">
-          <LoginForm/>
+          <LoginForm
         </div>
        </div>
 

@@ -22,10 +22,10 @@ const Greeting: React.FC<IProps> = (props) => {
         <div className="col-md-5">
             <div className="card">
                 <div className="card-body">
-                   <p className="h3 display-3">{state.message}</p>
-                   <button className='btn btn-success m-1' onClick={()=>changeMessage('Good morning')}>Good morning</button>
-                   <button className='btn btn-warning m-1' onClick={()=>changeMessage('Good evening')}>Good evening</button>
-                   <button className='btn btn-danger m-1' onClick={()=>changeMessage('Good afternoun')}>Good afternoun</button>
+                   <p className="h3 display-3">{state.message}</p>g')}>Good morning</button>
+                   <button className='btn btn-warning m-1'>Good evening</button>
+                   <button className='btn btn-success m-1' onClick={()=>changeMessage('Good mornin
+                   <button className='btn btn-danger m-1'>Good afternoun</button>
                 </div>
             </div>
         </div>

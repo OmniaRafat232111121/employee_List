@@ -2,7 +2,6 @@ import React from 'react';
 import {AiFillBook} from 'react-icons/ai'
 import Counter from './components/Counter';
 import Greeting from './components/Greeting';
-import LoginForm from './components/LoginForm';
 function App() {
   
   return (
@@ -32,7 +31,7 @@ function App() {
        </div> */}
        <div className="row">
         <div className="col">
-          <LoginForm/>
+          <
         </div>
        </div>
 
